@@ -1,0 +1,26 @@
+.topBar {
+  background: linear-gradient(#2f083b, #9f29ca);
+  align-items: center;
+  font-size: large;
+  height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #ffffff;
+  font-size: 1.2em;
+  font-family: 'Barlow Condensed', sans-serif; 
+}
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 55;
+  color: rgb(172, 104, 21);
+}
+.topBar > * {
+    display: inline-block;
+    vertical-align: middle;
+}
+.topBarChild{
+    display: flex;
+    align-items: center;
+}
+
+

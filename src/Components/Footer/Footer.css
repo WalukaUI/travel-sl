@@ -1,0 +1,12 @@
+.footer{
+    background-color: rgb(197, 206, 203);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 5em;
+}
+.footer > div{
+    background-color: rgb(148, 147, 147);
+    width: 10%;
+    padding: 2em;
+}

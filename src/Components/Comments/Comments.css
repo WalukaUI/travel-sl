@@ -1,0 +1,16 @@
+.commentss{
+    animation: MoveUpDown 1s linear infinite;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(244, 127, 255);
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-100px);
+      }
+}  
