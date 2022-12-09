@@ -1,7 +1,11 @@
 import './Comments.css'
+
+
 function Comments() {
+
     return<>
-    <h3>Comments are shown here</h3>
+
+    {/* <h3>Comments are shown here</h3>
     <div>
     <div className="comments"><p>
         <h5>Daniele Andreinhfhi</h5>
@@ -25,7 +29,7 @@ function Comments() {
         Great times, great memories.
     </p>
     </div>
-    </div>
+    </div> */}
     </>
 }
 export default Comments;
