@@ -2,14 +2,6 @@ import { func } from "prop-types";
 import "./Comments.css";
 
 function Comments() {
- function populateImages() {
-    for(let i=0;i<18;i++){
-        let imgNum=`./Images/Comments/${i}.jpg`
-        return <div className="item">
-        <img src={imgNum} alt="banana" />
-      </div>
-    }
- }
   return (
     <>
       <div
@@ -34,7 +26,57 @@ function Comments() {
           <div className="item active">
             <img src="./Images/Comments/1.jpg" alt="banana" />
           </div>
-            {populateImages()}
+          <div className="item">
+            <img src="./Images/Comments/2.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/3.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/4.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/5.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/6.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/7.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/8.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/9.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/10.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/11.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/12.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/13.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/14.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/15.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/16.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/17.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Images/Comments/18.jpg" alt="banana" />
+          </div>
         </div>
 
         <a
