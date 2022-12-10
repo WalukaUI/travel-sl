@@ -1,6 +1,15 @@
+import { func } from "prop-types";
 import "./Comments.css";
 
 function Comments() {
+ function populateImages() {
+    for(let i=0;i<18;i++){
+        let imgNum=`./Images/Comments/${i}.jpg`
+        return <div className="item">
+        <img src={imgNum} alt="banana" />
+      </div>
+    }
+ }
   return (
     <>
       <div
@@ -19,20 +28,13 @@ function Comments() {
           <li data-target="#carousel-demo" data-slide-to="2"></li>
           <li data-target="#carousel-demo" data-slide-to="3"></li>
         </ol>
-
+        
         <div className="carousel-inner">
+        
           <div className="item active">
-            <img src="./Img/2.jpg" alt="banana" />
+            <img src="./Images/Comments/1.jpg" alt="banana" />
           </div>
-          <div className="item">
-            <img src="./Img/3.jpg" alt="currant" />
-          </div>
-          <div className="item">
-            <img src="./Img/1.jpg" alt="mango" />
-          </div>
-          <div className="item">
-            <img src="./Img/2.jpg" alt="strawberries" />
-          </div>
+            {populateImages()}
         </div>
 
         <a
@@ -52,31 +54,6 @@ function Comments() {
 
         <div></div>
       </div>
-      {/* <h3>Comments are shown here</h3>
-    <div>
-    <div className="comments"><p>
-        <h5>Daniele Andreinhfhi</h5>
-    The best experience in my life! Wonderful, friendly and confortable trip!
-    </p>
-    </div>
-    <div className="comments"><p>
-        <h5>Federica Marchetti </h5>
-    I traveled around Sri Lanka with My boy-friend and Shaluka has been so available for every our requests. 
-    Professional and carefull. A good way to visit a fantastic country. I suggest you to call him if you need
-    to move yourself fast and don’t loose time with public trasports. He can help you with accomodation too 
-    if you like avventure and don’t want to book hotels. Enjoy
-    </p>
-    </div>
-    <div className="comments"><p>
-        <h5>Philip Meecham</h5>
-        From airport pick up to final drop off, I have been looked after really well.  
-        Thanks to the kindness and professionalism of my driver Shaluka, my first big solo 
-        holiday was a great success. He looked after me and was able to show me all the 'must see' 
-        sights as well as  some places not normally on the itinerary. I will look forward to a return trip.
-        Great times, great memories.
-    </p>
-    </div>
-    </div> */}
     </>
   );
 }
