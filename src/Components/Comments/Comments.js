@@ -1,11 +1,58 @@
-import './Comments.css'
-
+import "./Comments.css";
 
 function Comments() {
+  return (
+    <>
+      <div
+        id="carousel-demo"
+        className="carousel vertical slide"
+        data-ride="carousel"
+        data-interval="5000"
+      >
+        <ol className="carousel-indicators">
+          <li
+            data-target="#carousel-demo"
+            data-slide-to="0"
+            className="active"
+          ></li>
+          <li data-target="#carousel-demo" data-slide-to="1"></li>
+          <li data-target="#carousel-demo" data-slide-to="2"></li>
+          <li data-target="#carousel-demo" data-slide-to="3"></li>
+        </ol>
 
-    return<>
+        <div className="carousel-inner">
+          <div className="item active">
+            <img src="./Img/2.jpg" alt="banana" />
+          </div>
+          <div className="item">
+            <img src="./Img/3.jpg" alt="currant" />
+          </div>
+          <div className="item">
+            <img src="./Img/1.jpg" alt="mango" />
+          </div>
+          <div className="item">
+            <img src="./Img/2.jpg" alt="strawberries" />
+          </div>
+        </div>
 
-    {/* <h3>Comments are shown here</h3>
+        <a
+          className="left carousel-control"
+          href="#carousel-demo"
+          data-slide="prev"
+        >
+          <span className="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <a
+          className="right carousel-control"
+          href="#carousel-demo"
+          data-slide="next"
+        >
+          <span className="glyphicon glyphicon-chevron-down"></span>
+        </a>
+
+        <div></div>
+      </div>
+      {/* <h3>Comments are shown here</h3>
     <div>
     <div className="comments"><p>
         <h5>Daniele Andreinhfhi</h5>
@@ -31,5 +78,6 @@ function Comments() {
     </div>
     </div> */}
     </>
+  );
 }
 export default Comments;
